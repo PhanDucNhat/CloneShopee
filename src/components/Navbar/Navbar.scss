@@ -1,0 +1,63 @@
+.navbar {
+    width: 100%;
+    background: linear-gradient(90deg, #f53d2d, #ff6533);
+
+    &-container {
+        width: 70%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 14px;
+        color: #fff;
+
+        .navbar-menu {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            gap: 15px;
+            align-items: center;
+
+            li a {
+                color: #fff;
+                margin-right: 5px;
+
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+
+            i {
+                margin-left: 5px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &-right {
+        display: flex;
+        align-items: center;
+
+        i {
+            margin-right: 3px;
+            cursor: pointer;
+            padding-right: 2px;
+        }
+
+        a {
+            color: #fff;
+            padding-right: 10px;
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+
+        .username {
+            margin-left: 5px;
+            font-weight: 500;
+        }
+    }
+}
+
