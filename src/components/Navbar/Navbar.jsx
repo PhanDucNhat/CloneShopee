@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import './Navbar.scss'
 import { assets } from '../../assets/assets';
-// import { assets } from '../../assets/assets'
 
 const Navbar = () => {
   const [showImage, setShowImage] = useState(false);

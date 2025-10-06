@@ -49,45 +49,31 @@ const Banner = () => {
 
         <div className='banner-bottom'>
             <a href="">
-                <div>
-                    <img src={imageURL} alt="" />
-                </div>
+                <img src={imageURL} alt="" />
                 <p>Deal từ 1.000Đ</p>
             </a>
             <a href="">
-                <div>
-                    <img src={imageURL1} alt="" />
-                </div>
+                <img src={imageURL1} alt="" />
                 <p>Shoppe xử lý</p>
             </a>
             <a href="">
-                <div>
-                    <img src={imageURL2} alt="" />
-                </div>
+                <img src={imageURL2} alt="" />
                 <p>Deal hot</p>
             </a>
             <a href="">
-                <div>
-                    <img src={imageURL3} alt="" />
-                </div>
+                <img src={imageURL3} alt="" />
                 <p>Shopee style</p>
             </a>
             <a href="">
-                <div>
-                    <img src={imageURL4} alt="" />
-                </div>
+                <img src={imageURL4} alt="" />
                 <p>Săn xu</p>
             </a>
             <a href="">
-                <div>
-                    <img src={imageURL5} alt="" />
-                </div>
+                <img src={imageURL5} alt="" />
                 <p>KH thân thiết</p>
             </a>
             <a href="">
-                <div>
-                    <img src={imageURL6} alt="" />
-                </div>
+                <img src={imageURL6} alt="" />
                 <p>Mã giảm giá</p>
             </a>
         </div>
