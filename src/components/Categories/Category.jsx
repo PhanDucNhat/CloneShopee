@@ -6,6 +6,13 @@ const imgurlsale = 'https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/fl
 const imgurlproduct = 'https://down-vn.img.susercontent.com/file/vn-11134207-820l4-mejoqaf19d6u54_tn';
 
 const Category = () => {
+
+    const categories = Array.from({ length: 20 }, (_, i) => ({
+        id: i + 1,
+        image: imgurl,
+        name: `Thời trang nam`
+    }))
+
     const products = Array.from({ length: 18 }, () => ({
         img: imgurlproduct,
         price: `10.000đ`,
@@ -28,166 +35,16 @@ const Category = () => {
             <h4>DANH MỤC</h4>
             <div className='category-list'>
                 <ul>
-                    <li>
-                        <a href="">
-                            <div className='category-icon'>
-                                <img src={imgurl} alt="" />
-                                <p class="category-name">Thời trang nam</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <div className='category-icon'>
-                                <img src={imgurl} alt="" />
-                                <p class="category-name">Thời trang nam</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <div className='category-icon'>
-                                <img src={imgurl} alt="" />
-                                <p class="category-name">Thời trang nam</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <div className='category-icon'>
-                                <img src={imgurl} alt="" />
-                                <p class="category-name">Thời trang nam</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <div className='category-icon'>
-                                <img src={imgurl} alt="" />
-                                <p class="category-name">Thời trang nam</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <div className='category-icon'>
-                                <img src={imgurl} alt="" />
-                                <p class="category-name">Thời trang nam</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <div className='category-icon'>
-                                <img src={imgurl} alt="" />
-                                <p class="category-name">Thời trang nam</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <div className='category-icon'>
-                                <img src={imgurl} alt="" />
-                                <p class="category-name">Thời trang nam</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <div className='category-icon'>
-                                <img src={imgurl} alt="" />
-                                <p class="category-name">Thời trang nam</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <div className='category-icon'>
-                                <img src={imgurl} alt="" />
-                                <p class="category-name">Thời trang nam</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <div className='category-icon'>
-                                <img src={imgurl} alt="" />
-                                <p class="category-name">Thời trang nam</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <div className='category-icon'>
-                                <img src={imgurl} alt="" />
-                                <p class="category-name">Thời trang nam</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <div className='category-icon'>
-                                <img src={imgurl} alt="" />
-                                <p class="category-name">Thời trang nam</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <div className='category-icon'>
-                                <img src={imgurl} alt="" />
-                                <p class="category-name">Thời trang nam</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <div className='category-icon'>
-                                <img src={imgurl} alt="" />
-                                <p class="category-name">Thời trang nam</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <div className='category-icon'>
-                                <img src={imgurl} alt="" />
-                                <p class="category-name">Thời trang nam</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <div className='category-icon'>
-                                <img src={imgurl} alt="" />
-                                <p class="category-name">Thời trang nam</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <div className='category-icon'>
-                                <img src={imgurl} alt="" />
-                                <p class="category-name">Thời trang nam</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <div className='category-icon'>
-                                <img src={imgurl} alt="" />
-                                <p class="category-name">Thời trang nam</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <div className='category-icon'>
-                                <img src={imgurl} alt="" />
-                                <p class="category-name">Thời trang nam</p>
-                            </div>
-                        </a>
-                    </li>
+                    { categories.map((item) => (
+                        <li key={item.id}>
+                            <a href="">
+                                <div className='category-icon'>
+                                    <img src={item.image} alt="" />
+                                    <p class="category-name">{item.name}</p>
+                                </div>
+                            </a>
+                        </li>
+                    ))}
                 </ul>
                 <button className='prevButton'>&#10094;</button>
                 <button className='nextButton'>&#10095;</button>
